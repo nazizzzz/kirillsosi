@@ -11,7 +11,6 @@ class MyFrame(ctk.CTkFrame):
     def __init__(self, master, **kwargs):
         super().__init__(master, **kwargs)
 
-        # # add widgets onto the frame, for example:
 
 
 
@@ -25,8 +24,6 @@ class App(ctk.CTk):
         self.grid_columnconfigure(0, weight=1)
         self.title('борщенкова саси')
         font = ctk.CTkFont(family='Century Gothic', size=25)
-
-        # ctk.set_appearance_mode("Light")
 
         self.sup_frame = MyFrame(master=self, width=400, height=700, corner_radius=0)
         self.sup_frame.grid(row=0, column=0, rowspan=4, sticky='nsew')
@@ -48,13 +45,6 @@ class App(ctk.CTk):
                 print(self.supsup_frame.cget())
 
 
-            # s=(self.supsup_frame.winfo_children())
-            # p=str(s[0])
-            # print(p[12:])
-            # print(btn.cget('state'))
-            # if btn.cget('state') == 'normal':
-            #     btn.configure(fg_color='red')
-            # return()
 
         radio_var = tk.IntVar(value=0)
         self.radiobutton_1 = ctk.CTkButton(self.supsup_frame, text="RSA", font=font, height=50, width=190, fg_color='grey', text_color='white', corner_radius=5, command=hui)
